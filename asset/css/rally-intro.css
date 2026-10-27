@@ -2,7 +2,7 @@
 .rally-intro {
   background: var(--marfil);
   color: var(--carbon);
-  padding: clamp(76px, 10vw, 146px) clamp(20px, 6vw, 92px) clamp(30px, 4vw, 55px);
+  padding: clamp(76px, 10vw, 100px) clamp(20px, 6vw, 92px) clamp(30px, 4vw, 55px);
 }
 .rally-intro__inner {
   max-width: 1350px;
