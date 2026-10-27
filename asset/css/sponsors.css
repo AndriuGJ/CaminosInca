@@ -1,0 +1,24 @@
+/* Patrocinadores: ticker continuo y accesible */
+.sponsors { background: var(--marfil); color: var(--carbon); padding: clamp(50px, 6vw, 85px) 0 clamp(55px, 7vw, 95px); overflow: hidden; border-top: 1px solid rgba(32,33,36,.10); }
+.sponsors-heading { max-width: 1350px; padding: 0 clamp(20px, 6vw, 92px); margin: 0 auto 42px; }
+.sponsors-kicker { margin: 0 0 12px; text-transform: uppercase; color: var(--verde); font: 700 11px/1.5 var(--font-texto); letter-spacing: .22em; }
+.sponsors-heading h2 { margin: 0; font: 400 clamp(35px, 5vw, 68px)/1.08 var(--font-titulos); text-transform: uppercase; }
+.sponsors-heading h2 span { color: var(--terracota); }
+.sponsors-marquee { width: 100%; overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, black 7%, black 93%, transparent); mask-image: linear-gradient(to right, transparent, black 7%, black 93%, transparent); }
+.sponsors-track { display: flex; width: max-content; animation: sponsors-scroll 36s linear infinite; }
+.sponsors-track__group { display: flex; flex: 0 0 auto; align-items: center; gap: clamp(30px, 4vw, 72px); padding-right: clamp(30px, 4vw, 72px); }
+.sponsors-logo { flex: 0 0 auto; width: clamp(125px, 15vw, 190px); height: 105px; display: flex; justify-content: center; align-items: center; }
+.sponsors-logo img { display: block; width: 100%; max-height: 92px; height: auto; object-fit: contain; }
+.sponsors-marquee:hover .sponsors-track, .sponsors-marquee:focus-within .sponsors-track { animation-play-state: paused; }
+@keyframes sponsors-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 600px) {
+  .sponsors-heading { margin-bottom: 28px; }
+  .sponsors-logo { width: 130px; height: 85px; }
+  .sponsors-logo img { max-height: 72px; }
+  .sponsors-track { animation-duration: 30s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sponsors-track { animation: none; }
+  .sponsors-marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .sponsors-track__group[aria-hidden="true"] { display: none; }
+}
