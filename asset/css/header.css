@@ -2,9 +2,9 @@
 .site-header { background: var(--carbon); color: var(--marfil); width: 100%; position: relative; z-index: 20; }
 .header-inner { max-width: 1600px; min-height: 92px; padding: 0 clamp(12px, 2vw, 28px); margin: auto; display: grid; grid-template-columns: minmax(230px, 1fr) auto minmax(160px, 1fr); align-items: center; gap: 12px; }
 .header-brand { display: inline-flex; width: fit-content; align-items: center; }
-.header-brand img { display: block; width: clamp(200px, 18vw, 260px); height: auto; object-fit: contain; }
+.header-brand img { display: block; width: clamp(200px, 18vw, 260px); height: auto; object-fit: contain;}
 .header-nav { display: flex; justify-content: center; align-items: center; gap: clamp(18px, 2.5vw, 36px); }
-.header-nav a { font-size: 14px; font-weight: 600; text-decoration: none; transition: color .2s ease; white-space: nowrap; }
+.header-nav a { font-size: 16px; font-weight: 600; text-decoration: none; transition: color .2s ease; white-space: nowrap; }
 .header-nav a:hover, .header-nav a:focus-visible, .header-nav a[aria-current="page"] { color: var(--arena); }
 .header-end { display: flex; justify-content: flex-end; align-items: center; }
 .header-monkey { display: block; width: 155px; height: 92px; object-fit: contain; pointer-events: none; }
