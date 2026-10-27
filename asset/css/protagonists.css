@@ -1,5 +1,5 @@
 /* Protagonistas del desafío — video a la izquierda, contenido a la derecha */
-.protagonists { background: var(--marfil); color: var(--carbon); padding: clamp(64px, 9vw, 125px) clamp(20px, 6vw, 92px); }
+.protagonists { background: var(--marfil); color: var(--carbon); padding: clamp(28px, 4vw, 55px) clamp(20px, 6vw, 92px) clamp(64px, 9vw, 125px); }
 .protagonists__inner { max-width: 1350px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(32px, 6vw, 105px); align-items: center; }
 .protagonists__media { position: relative; width: 100%; aspect-ratio: 4 / 3; background: var(--carbon); overflow: hidden; }
 .protagonists__video { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -11,4 +11,4 @@
 .protagonists__title span { display: block; color: var(--terracota); }
 .protagonists__description { border-left: 1px solid var(--arena); padding-left: 24px; margin: 0; max-width: 540px; color: var(--carbon); font: 400 clamp(15px, 1.3vw, 18px)/1.85 var(--font-texto); }
 @media (max-width: 830px) { .protagonists__inner { grid-template-columns: 1fr; gap: 38px; } .protagonists__media { aspect-ratio: 16 / 10; } .protagonists__title { font-size: clamp(52px, 8vw, 80px); } }
-@media (max-width: 480px) { .protagonists { padding: 65px 20px; } .protagonists__media { aspect-ratio: 4 / 3; } .protagonists__title { font-size: clamp(46px, 12vw, 65px); } .protagonists__description { padding-left: 18px; } }
+@media (max-width: 480px) { .protagonists { padding: 28px 20px 65px; } .protagonists__media { aspect-ratio: 4 / 3; } .protagonists__title { font-size: clamp(46px, 12vw, 65px); } .protagonists__description { padding-left: 18px; } }
