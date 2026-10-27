@@ -1,0 +1,28 @@
+/* Header de Caminos del Inca */
+.site-header { background: var(--carbon); color: var(--marfil); width: 100%; position: relative; z-index: 20; }
+.header-inner { max-width: 1600px; min-height: 92px; padding: 0 clamp(12px, 2vw, 28px); margin: auto; display: grid; grid-template-columns: minmax(230px, 1fr) auto minmax(160px, 1fr); align-items: center; gap: 12px; }
+.header-brand { display: inline-flex; width: fit-content; align-items: center; }
+.header-brand img { display: block; width: clamp(200px, 18vw, 260px); height: auto; object-fit: contain; }
+.header-nav { display: flex; justify-content: center; align-items: center; gap: clamp(18px, 2.5vw, 36px); }
+.header-nav a { font-size: 14px; font-weight: 600; text-decoration: none; transition: color .2s ease; white-space: nowrap; }
+.header-nav a:hover, .header-nav a:focus-visible, .header-nav a[aria-current="page"] { color: var(--arena); }
+.header-end { display: flex; justify-content: flex-end; align-items: center; }
+.header-monkey { display: block; width: 155px; height: 92px; object-fit: contain; pointer-events: none; }
+.header-toggle { display: none; background: transparent; border: 1px solid rgba(247,245,240,.35); color: var(--marfil); padding: 9px; border-radius: 5px; cursor: pointer; }
+.header-toggle svg { display: block; width: 23px; height: 23px; }
+.header-toggle:focus-visible, .header-brand:focus-visible { outline: 2px solid var(--arena); outline-offset: 4px; }
+@media (max-width: 900px) {
+  .header-inner { min-height: 82px; grid-template-columns: 1fr auto; gap: 10px; }
+  .header-brand img { width: clamp(165px, 24vw, 210px); }
+  .header-end { gap: 8px; }
+  .header-monkey { width: 105px; height: 82px; }
+  .header-toggle { display: inline-flex; }
+  .header-nav { display: none; grid-column: 1 / -1; grid-row: 2; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 0 12px; border-top: 1px solid rgba(247,245,240,.15); }
+  .header-nav.is-open { display: flex; }
+  .header-nav a { padding: 13px 5px; }
+}
+@media (max-width: 430px) {
+  .header-inner { padding-inline: 10px; }
+  .header-brand img { width: 155px; }
+  .header-monkey { width: 84px; height: 76px; }
+}
