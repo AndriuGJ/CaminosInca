@@ -13,34 +13,11 @@
   <link rel="stylesheet" href="asset/css/protagonists.css">
   <link rel="stylesheet" href="asset/css/sponsors.css">
   <link rel="stylesheet" href="asset/css/footer.css">
+  <script src="asset/js/layouts.js" defer></script>
   <script src="asset/js/header.js" defer></script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="header-brand" href="index.html" aria-label="Caminos del Inca — inicio">
-        <img src="asset/img/logo_caminos_inca.png" alt="Logo Caminos del Inca">
-      </a>
-
-      <nav class="header-nav" id="main-nav" aria-label="Navegación principal">
-        <a href="index.html" aria-current="page">Inicio</a>
-        <a href="pages/corredores.html">Corredores</a>
-        <a href="pages/rutas.html">Rutas</a>
-        <a href="pages/noticias.html">Noticias</a>
-        <a href="pages/noticias.html">Historia</a>
-        
-      </nav>
-
-      <div class="header-end">
-        <video class="header-monkey" autoplay muted loop playsinline preload="metadata" aria-label="Animación representativa de Caminos del Inca">
-          <source src="asset/video/mono_header.webm" type="video/webm">
-        </video>
-        <button class="header-toggle" type="button" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </div>
-  </header>
+<body data-root="">
+  <div id="shared-header"></div>
   <main id="contenido-principal">
     <section class="hero" aria-labelledby="hero-title">
       <!-- Video principal de portada -->
@@ -125,38 +102,6 @@
       </div>
     </section>
   </main>
-  <footer class="site-footer" aria-label="Pie de página">
-    <div class="footer-main">
-      <div class="footer-brand">
-        <a href="index.html" aria-label="Volver al inicio de Caminos del Inca">
-          <img src="asset/img/logo_caminos_inca.png" alt="Caminos del Inca" loading="lazy">
-        </a>
-        <button class="footer-opinion" type="button" disabled title="Próximamente: formulario de opiniones">
-          <span>Comparte tu opinión</span><span aria-hidden="true">↗</span>
-        </button>
-      </div>
-      <nav aria-label="Enlaces del pie de página">
-        <ul class="footer-links">
-          <li><a href="pages/posiciones.html">Posiciones</a></li>
-          <li><a href="pages/corredores.html">Corredores</a></li>
-          <li><a href="pages/equipos.html">Equipos</a></li>
-          <li><a href="pages/fi-desbloqueado.html">FI desbloqueado</a></li>
-        </ul>
-      </nav>
-      <div class="footer-social">
-        <h2>Encuéntranos en redes</h2>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.2 0-1.6.7-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg><span>Rally Caminos del Inca · Facebook</span></li>
-          <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l7.3-8.5L1.8 2h6.4l4.5 6.8L18.9 2Zm-1.1 18h1.7L7.2 3.9H5.4L17.8 20Z"/></svg><span>@CDIOficial · X</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg><span>@rallycaminosdelinca · Instagram</span></li>
-          <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4a2.6 2.6 0 0 0-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.8a2.6 2.6 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8C22 15.2 22 12 22 12s0-3.2-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg><span>Rally Caminos del Inca · YouTube</span></li>
-        </ul>
-      </div>
-      <div class="footer-art">
-        <img src="asset/img/img_footer.png" alt="Figura inspirada en las Líneas de Nazca" loading="lazy">
-      </div>
-    </div>
-    <div class="footer-bottom"><small>© 2026 Rally Caminos del Inca · Todos los derechos reservados</small></div>
-  </footer>
+  <div id="shared-footer"></div>
 </body>
 </html>
