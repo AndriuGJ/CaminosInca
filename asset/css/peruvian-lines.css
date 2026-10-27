@@ -1,0 +1,14 @@
+/* Imagen decorativa a ancho de pantalla, sin scroll horizontal */
+.peruvian-lines {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.peruvian-lines img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
