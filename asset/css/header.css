@@ -1,8 +1,8 @@
 /* Header de Caminos del Inca */
 .site-header { background: var(--carbon); color: var(--marfil); width: 100%; position: relative; z-index: 20; }
-.header-inner { max-width: 1600px; min-height: 92px; padding: 0 clamp(12px, 2vw, 28px); margin: auto; display: grid; grid-template-columns: minmax(230px, 1fr) auto minmax(160px, 1fr); align-items: center; gap: 12px; }
+.header-inner { max-width: 1600px; min-height: 92px; padding: 0 clamp(12px, 2vw, 28px); margin: auto; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px; }
 .header-brand { display: inline-flex; width: fit-content; align-items: center; }
-.header-brand img { display: block; width: clamp(200px, 18vw, 260px); height: auto; object-fit: contain;}
+.header-brand img { display: block; width: clamp(175px, 19vw, 275px); max-width: 100%; height: auto; object-fit: contain;}
 .header-nav { display: flex; justify-content: center; align-items: center; gap: clamp(18px, 2.5vw, 36px); }
 .header-nav a { font-size: 16px; font-weight: 600; text-decoration: none; transition: color .2s ease; white-space: nowrap; }
 .header-nav a:hover, .header-nav a:focus-visible, .header-nav a[aria-current="page"] { color: var(--arena); }
@@ -13,7 +13,7 @@
 .header-toggle:focus-visible, .header-brand:focus-visible { outline: 2px solid var(--arena); outline-offset: 4px; }
 @media (max-width: 900px) {
   .header-inner { min-height: 82px; grid-template-columns: 1fr auto; gap: 10px; }
-  .header-brand img { width: clamp(165px, 24vw, 210px); }
+  .header-brand img { width: clamp(165px, 27vw, 220px); max-width: 100%; }
   .header-end { gap: 8px; }
   .header-monkey { width: 105px; height: 82px; }
   .header-toggle { display: inline-flex; }
@@ -23,6 +23,6 @@
 }
 @media (max-width: 430px) {
   .header-inner { padding-inline: 10px; }
-  .header-brand img { width: 155px; }
+  .header-brand img { width: min(43vw, 170px); }
   .header-monkey { width: 84px; height: 76px; }
 }
