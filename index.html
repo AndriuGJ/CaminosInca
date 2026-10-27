@@ -39,8 +39,10 @@
   </header>
   <main id="contenido-principal">
     <section class="hero" aria-labelledby="hero-title">
-      <!-- Imagen provisional: sustituye este elemento por un <video class="hero-media" autoplay muted loop playsinline> en el futuro. -->
-      <video class="hero-media" src="asset/video/main-video.mp4" alt="Automóvil de rally levantando polvo en una ruta de montaña" fetchpriority="high">
+      <!-- Video de portada: sube el archivo como asset/video/hero.webm -->
+      <video class="hero-media" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <source src="asset/video/main-video.mp4" type="video/webm">
+      </video>
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-content">
         <p class="hero-eyebrow">Pasión, historia y velocidad</p>
@@ -49,7 +51,6 @@
         <a class="hero-action" href="pages/rutas.html">Descubre las rutas <span aria-hidden="true">↗</span></a>
       </div>
       <div class="hero-bottom" aria-hidden="true"><span>01 <span style="padding: 0 12px">——</span> 04</span><span class="hero-scroll">Desliza para explorar ↓</span><span>Rally Caminos del Inca</span></div>
-      <small class="hero-source">Foto provisional: <a href="https://rpp.pe/automovilismo/caminos-del-inca/caminos-del-inca-2024-primera-etapa-en-vivo-recorrido-ruta-lima-huancayo-resultados-hoy-clasificaciones-por-categorias-y-donde-ver-por-tv-rally-peruano-noticia-1592377" target="_blank" rel="noopener noreferrer">RPP</a></small>
     </section>
   </main>
 </body>
