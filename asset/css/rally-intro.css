@@ -1,0 +1,86 @@
+/* Sección informativa Rally Caminos del Inca 2026 */
+.rally-intro {
+  background: var(--marfil);
+  color: var(--carbon);
+  padding: clamp(76px, 10vw, 146px) clamp(20px, 6vw, 92px);
+}
+.rally-intro__inner {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(36px, 7vw, 120px);
+  align-items: center;
+}
+.rally-intro__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+  letter-spacing: .22em;
+  font: 700 11px/1.5 var(--font-texto);
+  color: var(--verde);
+}
+.rally-intro__eyebrow::before {
+  content: "";
+  display: block;
+  background: var(--terracota);
+  height: 2px;
+  width: 34px;
+}
+.rally-intro__title {
+  margin: 0;
+  font-family: var(--font-titulos);
+  font-size: clamp(56px, 7vw, 110px);
+  font-weight: 400;
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+.rally-intro__title span { display: block; color: var(--terracota); }
+.rally-intro__right {
+  border-left: 1px solid var(--arena);
+  padding-left: clamp(24px, 4vw, 64px);
+}
+.rally-intro__edition {
+  display: inline-block;
+  font-family: var(--font-titulos);
+  font-size: clamp(24px, 3vw, 42px);
+  color: var(--verde);
+  margin: 0 0 22px;
+}
+.rally-intro__description {
+  font-size: clamp(15px, 1.2vw, 18px);
+  line-height: 1.9;
+  max-width: 650px;
+  margin: 0 0 32px;
+}
+.rally-intro__date {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(32,33,36,.15);
+}
+.rally-intro__date strong {
+  font-family: var(--font-titulos);
+  font-weight: 400;
+  font-size: clamp(25px, 3.2vw, 44px);
+}
+.rally-intro__date span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--verde);
+}
+@media (max-width: 800px) {
+  .rally-intro__inner { grid-template-columns: 1fr; gap: 36px; }
+  .rally-intro__right { border-left: none; border-top: 1px solid var(--arena); padding: 30px 0 0; }
+  .rally-intro__title { font-size: clamp(56px, 11vw, 88px); }
+}
+@media (max-width: 480px) {
+  .rally-intro { padding: 68px 20px; }
+  .rally-intro__title { font-size: clamp(52px, 13vw, 68px); }
+}
