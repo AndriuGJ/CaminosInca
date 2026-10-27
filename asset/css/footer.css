@@ -1,0 +1,26 @@
+/* Footer editorial de Caminos del Inca */
+.site-footer { background: var(--carbon); color: var(--marfil); overflow: hidden; }
+.footer-main { max-width: 1500px; margin: auto; padding: clamp(35px,5vw,68px) clamp(20px,5vw,70px); display: grid; grid-template-columns: 1.12fr 1fr 1.15fr .9fr; align-items: center; gap: clamp(24px,3vw,50px); }
+.footer-brand, .footer-links, .footer-social { min-width: 0; }
+.footer-brand { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.footer-brand img { display: block; width: clamp(155px,17vw,215px); max-width: 100%; height: auto; object-fit: contain; }
+.footer-opinion { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; max-width: 240px; width: 100%; border: 1px solid var(--arena); color: var(--marfil); background: transparent; padding: 13px 16px; font: 700 12px/1.3 var(--font-texto); text-transform: uppercase; letter-spacing: .025em; border-radius: 2px; }
+.footer-opinion[disabled] { opacity: .7; cursor: not-allowed; }
+.footer-opinion span:last-child { color: var(--arena); font-size: 20px; }
+.footer-links { list-style: none; padding: 8px 0 8px clamp(18px,2vw,35px); margin: 0; border-left: 1px solid rgba(199,177,140,.52); display: flex; flex-direction: column; gap: 16px; }
+.footer-links a { font: 400 clamp(18px,2vw,27px)/1.1 var(--font-titulos); text-decoration: none; text-transform: uppercase; transition: color .2s; }
+.footer-links a::before { content: "+ "; color: var(--arena); }
+.footer-links a:hover, .footer-links a:focus-visible { color: var(--arena); }
+.footer-social { border-left: 1px solid rgba(199,177,140,.52); padding-left: clamp(18px,2vw,35px); }
+.footer-social h2 { font: 600 11px/1.5 var(--font-texto); letter-spacing: .15em; text-transform: uppercase; color: var(--arena); margin: 0 0 18px; }
+.footer-social ul { padding: 0; margin: 0; list-style: none; display: grid; gap: 13px; }
+.footer-social li { display: flex; gap: 12px; align-items: center; font-size: 12px; line-height: 1.3; }
+.footer-social svg { flex: 0 0 20px; width: 20px; height: 20px; color: var(--marfil); }
+.footer-art { display: flex; justify-content: flex-end; align-items: center; }
+.footer-art img { display: block; width: min(100%, 235px); max-height: 235px; object-fit: contain; }
+.footer-bottom { border-top: 1px solid rgba(199,177,140,.3); padding: 13px clamp(20px,5vw,70px); display: flex; align-items: center; justify-content: center; position: relative; }
+.footer-bottom small { font: 500 10px/1.6 var(--font-texto); letter-spacing: .1em; text-transform: uppercase; text-align: center; color: rgba(247,245,240,.78); }
+.footer-bottom::after { content: ""; position: absolute; right: 0; bottom: 0; width: 170px; height: 9px; opacity: .5; background: repeating-linear-gradient(135deg, transparent 0 6px, var(--arena) 6px 8px, transparent 8px 14px); }
+@media (max-width: 1020px) { .footer-main { grid-template-columns: 1fr 1fr; align-items: start; } .footer-art { justify-content: flex-start; padding-left: 25px; } .footer-art img { max-height: 180px; } }
+@media (max-width: 570px) { .footer-main { grid-template-columns: 1fr; gap: 30px; padding-block: 42px; } .footer-brand img { width: 185px; } .footer-links, .footer-social { padding-left: 20px; } .footer-art { padding: 0; justify-content: center; } .footer-art img { width: 160px; } .footer-bottom::after { width: 65px; } }
+@media (prefers-reduced-motion: reduce) { .footer-links a { transition: none; } }
