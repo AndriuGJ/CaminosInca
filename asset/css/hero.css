@@ -1,0 +1,21 @@
+/* Hero principal: reemplazar la imagen con un video sin cambiar la composición */
+.hero { position: relative; isolation: isolate; display: flex; align-items: center; min-height: min(790px, calc(100svh - 88px)); background: #191c1d; color: var(--marfil); overflow: hidden; }
+.hero-media, .hero-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-media { z-index: -2; object-fit: cover; object-position: 62% center; }
+.hero-shade { z-index: -1; background: linear-gradient(90deg, rgba(14,17,18,.83) 0%, rgba(14,17,18,.48) 48%, rgba(14,17,18,.14) 100%), linear-gradient(0deg, rgba(14,17,18,.68), transparent 35%); }
+.hero-content { width: min(100%, 1560px); margin: 0 auto; padding: clamp(65px, 10vh, 125px) clamp(22px, 7.5vw, 120px) 115px; }
+.hero-eyebrow { color: var(--arena); font: 700 11px/1.5 var(--font-texto); letter-spacing: .28em; text-transform: uppercase; display: flex; align-items: center; gap: 14px; }
+.hero-eyebrow::before { content: ''; display: block; width: 30px; height: 1px; background: var(--terracota); }
+.hero-title { font-family: var(--font-titulos); font-size: clamp(70px, 11vw, 170px); line-height: .94; letter-spacing: -.015em; font-weight: 400; text-transform: uppercase; margin: 26px 0 18px; text-wrap: balance; }
+.hero-title span { display: block; }
+.hero-title .accent { color: var(--terracota); }
+.hero-description { max-width: 470px; font-size: clamp(13px, 1.3vw, 16px); line-height: 1.6; margin: 0 0 26px; }
+.hero-action { display: inline-flex; gap: 18px; align-items: center; border: 1px solid var(--arena); color: var(--arena); background: rgba(24,26,26,.25); padding: 15px 20px; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; transition: background .2s, color .2s; }
+.hero-action:hover, .hero-action:focus-visible { color: var(--carbon); background: var(--arena); }
+.hero-bottom { position: absolute; bottom: 26px; left: clamp(22px, 7.5vw, 120px); right: clamp(22px, 7.5vw, 120px); display: flex; justify-content: space-between; gap: 16px; align-items: center; color: var(--arena); font-size: 10px; text-transform: uppercase; font-weight: 700; letter-spacing: .12em; }
+.hero-scroll { display: flex; align-items: center; gap: 14px; }
+.hero-source { position: absolute; bottom: 7px; right: 15px; font-size: 9px; color: rgba(247,245,240,.65); }
+.hero-source a { text-decoration: underline; }
+@media (max-width: 900px) { .hero { min-height: min(760px, calc(100svh - 82px)); } .hero-title { font-size: clamp(66px, 12vw, 115px); } .hero-content { padding-bottom: 110px; } }
+@media (max-width: 600px) { .hero { min-height: max(620px, calc(100svh - 80px)); } .hero-media { object-position: 63% center; } .hero-shade { background: linear-gradient(90deg, rgba(14,17,18,.77), rgba(14,17,18,.3)), linear-gradient(0deg, rgba(14,17,18,.78), transparent 55%); } .hero-content { padding: 80px 20px 110px; } .hero-title { font-size: clamp(58px, 15vw, 90px); margin-top: 20px; } .hero-bottom { left: 20px; right: 20px; bottom: 32px; } .hero-scroll { display: none; } }
+@media (prefers-reduced-motion: reduce) { .hero-action { transition: none; } }
