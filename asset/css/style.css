@@ -14,22 +14,22 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--marfil); color: var(--carbon); font-family: var(--font-texto); }
 a { color: inherit; }
 .site-header { background: var(--carbon); color: var(--marfil); width: 100%; position: relative; z-index: 20; }
-.header-inner { max-width: 1440px; min-height: 86px; padding: 9px clamp(20px, 4vw, 60px); margin: auto; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; }
+.header-inner { max-width: 1440px; min-height: 112px; padding: 7px clamp(20px, 4vw, 60px); margin: auto; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; }
 .header-brand { display: inline-flex; width: fit-content; align-items: center; }
-.header-brand img { display: block; width: clamp(104px, 11vw, 148px); height: auto; object-fit: contain; }
+.header-brand img { display: block; width: clamp(150px, 15vw, 195px); height: auto; object-fit: contain; }
 .header-nav { display: flex; justify-content: center; align-items: center; gap: clamp(22px, 3vw, 44px); }
 .header-nav a { font-size: 14px; font-weight: 600; text-decoration: none; transition: color .2s ease; white-space: nowrap; }
 .header-nav a:hover, .header-nav a:focus-visible, .header-nav a[aria-current="page"] { color: var(--arena); }
 .header-end { display: flex; justify-content: flex-end; align-items: center; }
-.header-monkey { display: block; width: 76px; height: 68px; object-fit: contain; pointer-events: none; }
+.header-monkey { display: block; width: 108px; height: 100px; object-fit: contain; pointer-events: none; }
 .header-toggle { display: none; background: transparent; border: 1px solid rgba(247,245,240,.35); color: var(--marfil); padding: 9px; border-radius: 5px; cursor: pointer; }
 .header-toggle svg { display: block; width: 23px; height: 23px; }
 .header-toggle:focus-visible, .header-brand:focus-visible { outline: 2px solid var(--arena); outline-offset: 4px; }
 @media (max-width: 720px) {
-  .header-inner { min-height: 76px; grid-template-columns: 1fr auto; gap: 12px; }
-  .header-brand img { width: 116px; }
+  .header-inner { min-height: 88px; grid-template-columns: 1fr auto; gap: 12px; }
+  .header-brand img { width: 140px; }
   .header-end { gap: 14px; }
-  .header-monkey { width: 54px; height: 55px; }
+  .header-monkey { width: 70px; height: 72px; }
   .header-toggle { display: inline-flex; }
   .header-nav { display: none; grid-column: 1 / -1; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 0 18px; border-top: 1px solid rgba(247,245,240,.15); }
   .header-nav.is-open { display: flex; }
