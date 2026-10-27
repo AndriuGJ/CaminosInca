@@ -1,0 +1,10 @@
+/* Páginas pendientes: apariencia común */
+.placeholder-page{background:var(--marfil);color:var(--carbon);min-height:clamp(470px,66vh,750px);display:flex;align-items:center;padding:90px clamp(20px,7vw,100px)}
+.placeholder-page__content{width:min(100%,1280px);margin:auto;border-left:3px solid var(--arena);padding-left:clamp(20px,4vw,58px)}
+.placeholder-page__eyebrow{color:var(--verde);text-transform:uppercase;letter-spacing:.2em;font:700 12px var(--font-texto)}
+.placeholder-page h1{font:400 clamp(65px,11vw,160px)/1 var(--font-titulos);text-transform:uppercase;margin:24px 0 15px;overflow-wrap:anywhere}
+.placeholder-page__status{font:400 clamp(30px,5vw,65px)/1.15 var(--font-titulos);color:var(--terracota);margin:0 0 24px;text-transform:uppercase}
+.placeholder-page__desc{font:400 clamp(15px,1.5vw,19px)/1.7 var(--font-texto);max-width:650px;margin:0 0 24px}
+.placeholder-page__back{color:var(--carbon);font-weight:700;text-decoration:none;border-bottom:1px solid var(--arena);padding-bottom:5px}
+.placeholder-page__back:hover{color:var(--terracota)}
+@media(max-width:600px){.placeholder-page{padding:75px 20px}.placeholder-page h1{font-size:clamp(52px,14vw,78px)}}
