@@ -24,7 +24,7 @@
   </div>
 </section>
 <section class="routes-section" aria-labelledby="routes-title">
-  <div class="routes-section__intro"><div><p class="routes-kicker">Descubre el recorrido</p><h2 id="routes-title">ETAPAS DE LA <span>AVENTURA.</span></h2></div><p class="routes-notice">Prototipo de diseño: trayecto, fechas y datos de etapas ilustrativos. Pendiente de incorporar el recorrido oficial 2026.</p></div>
+  <div class="routes-section__intro"><div><p class="routes-kicker">Descubre el recorrido</p><h2 id="routes-title">ETAPAS DE LA <span>AVENTURA.</span></h2></div><p class="routes-notice">Etapas y horarios tomados del programa oficial 2026. El mapa es un esquema decorativo, no un trazado GPS; faltan kilómetros y alturas verificados.</p></div>
   <div class="routes-layout">
     <div class="route-map">
       <div class="route-map__heading"><strong>PERÚ / RECORRIDO</strong><span>VISTA ESQUEMÁTICA</span></div>
@@ -47,20 +47,20 @@
     </div>
     <div class="routes-list-col">
       <div class="routes-list__head"><h3>ETAPAS DEL RECORRIDO</h3><span>SELECCIONA UNA ETAPA ↗</span></div>
-      <div class="routes-list" id="routes-list" aria-label="Etapas demostrativas"></div>
-      <div class="routes-tip"><strong>¿CÓMO EXPLORAR?</strong><p>Selecciona cualquier etapa para ver sus datos, detalles y una visualización del desnivel. Se actualizará con la información confirmada del rally.</p></div>
+      <div class="routes-list" id="routes-list" aria-label="Etapas del Rally Caminos del Inca 2026"></div>
+      <div class="routes-tip"><strong>¿CÓMO EXPLORAR?</strong><p>Selecciona una etapa para conocer su fecha, hora de largada y los principales detalles reportados por la organización.</p></div>
     </div>
     <article class="route-detail" aria-live="polite" aria-labelledby="route-detail-title">
       <div class="route-detail__banner"><span id="route-detail-number">ETAPA 01</span><span>CAMINOS DEL INCA</span></div>
       <div class="route-detail__body">
         <h3 id="route-detail-title">LIMA → HUANCAYO</h3>
         <div class="route-detail__facts">
-          <div><small>FECHA</small><strong id="route-detail-date">Por confirmar</strong></div>
+          <div><small>FECHA</small><strong id="route-detail-date">10 oct. · 09:00</strong></div>
           <div><small>DISTANCIA</small><strong id="route-detail-distance">Por confirmar</strong></div>
           <div><small>ALTURA</small><strong id="route-detail-altitude">Por confirmar</strong></div>
         </div>
         <h4>SOBRE LA ETAPA</h4>
-        <p id="route-detail-description">Recorrido de muestra para probar el diseño.</p>
+        <p id="route-detail-description">Selecciona una etapa para conocer su descripción oficial.</p>
         <h4>PERFIL DE RUTA</h4>
         <svg class="route-elevation" viewBox="0 0 320 115" role="img" aria-label="Gráfico conceptual de elevación, sin mediciones reales">
           <defs><linearGradient id="elev" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a85f49" stop-opacity=".27"/><stop offset="1" stop-color="#a85f49" stop-opacity="0"/></linearGradient></defs>
@@ -68,7 +68,8 @@
           <path id="route-profile-line" d="M0 95 L45 78 80 89 125 43 171 65 217 32 265 42 320 14" fill="none" stroke="#a85f49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div class="route-elevation__labels"><span id="route-elevation-from">SALIDA</span><span id="route-elevation-to">LLEGADA</span></div>
-        <p class="route-detail__disclaimer">Perfil ilustrativo, no representa altitudes medidas.</p>
+        <p><a id="route-official-source" href="https://rallycaminosdelinca.com/" target="_blank" rel="noopener noreferrer">Leer la información oficial de la etapa ↗</a></p>
+        <p class="route-detail__disclaimer">Gráfico ilustrativo: no representa altitudes medidas.</p>
       </div>
     </article>
   </div>
