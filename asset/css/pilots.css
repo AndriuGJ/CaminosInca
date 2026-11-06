@@ -79,3 +79,5 @@ body.pilot-modal-open {overflow:hidden;}
 .pilots-info h3 {font:400 25px var(--font-titulos);margin:9px 0 5px;}
 .pilots-info p {font:400 13px/1.7 var(--font-texto);margin:0;}
 @media(max-width:800px){.pilots-more__intro,.pilots-more__grid{grid-template-columns:1fr;gap:20px}}
+
+.pilots-sources{background:#eae5da;padding:0 clamp(20px,5vw,75px) 35px;font-size:12px;line-height:1.8;color:#555}.pilots-sources p{max-width:1400px;margin:0 auto}.pilots-sources a{color:var(--terracota);text-decoration:underline}.pilot-dialog__stats strong{font-size:clamp(13px,1.5vw,24px);overflow-wrap:anywhere}.pilot-card__points{font-size:clamp(12px,1.3vw,18px);text-align:center}
