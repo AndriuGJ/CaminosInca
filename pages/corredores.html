@@ -4,27 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#202124">
-  <meta name="description" content="Corredores - Rally Caminos del Inca.">
-  <title>Corredores | Caminos del Inca</title>
+  <meta name="description" content="Pilotos destacados del Rally Caminos del Inca. Diseño preliminar de ranking.">
+  <title>Pilotos | Caminos del Inca</title>
   <link rel="stylesheet" href="../asset/css/style.css">
   <link rel="stylesheet" href="../asset/css/header.css">
   <link rel="stylesheet" href="../asset/css/footer.css">
-  <link rel="stylesheet" href="../asset/css/pages.css">
+  <link rel="stylesheet" href="../asset/css/pilots.css">
   <script src="../asset/js/layouts.js" defer></script>
   <script src="../asset/js/header.js" defer></script>
+  <script src="../asset/js/pilots.js" defer></script>
 </head>
 <body data-root="../">
   <div id="shared-header"></div>
-  <main id="contenido-principal">
-    <section class="placeholder-page" aria-labelledby="page-title">
-      <div class="placeholder-page__content">
-        <p class="placeholder-page__eyebrow">Rally Caminos del Inca · 2026</p>
-        <h1 id="page-title">Corredores</h1>
-        <p class="placeholder-page__status">Por implementar.</p>
-        <p class="placeholder-page__desc">Estamos preparando esta sección. Pronto encontrarás aquí toda la información.</p>
-        <a class="placeholder-page__back" href="../index.html">← Volver al inicio</a>
+  <main id="contenido-principal" class="pilots-page">
+    <section class="pilots-stage" aria-labelledby="pilots-title">
+      <div class="pilots-stage__inner">
+        <div class="pilots-heading">
+          <p class="pilots-eyebrow">Ranking · Precisión · Experiencia</p>
+          <h1 id="pilots-title">Pilotos <span>destacados.</span></h1>
+          <span class="pilots-heading__rule" aria-hidden="true"></span>
+          <p class="pilots-heading__desc">Conoce a los protagonistas que marcan el ritmo del Rally Caminos del Inca.</p>
+          <p class="pilots-heading__notice">Demostración visual: nombres, puestos y estadísticas ficticios. No representan resultados oficiales.</p>
+        </div>
+        <div class="pilots-podium" aria-label="Podio demostrativo de tres pilotos">
+          <button type="button" class="pilot-card pilot-card--second" data-pilot="2" aria-haspopup="dialog">
+            <span class="pilot-card__position">2</span><span class="pilot-card__portrait"><span>MR</span></span>
+            <span class="pilot-card__name">Marco Rivera</span><span class="pilot-card__team">Equipo Rally Perú</span>
+            <span class="pilot-card__line"></span><span class="pilot-card__points">116 pts</span>
+          </button>
+          <button type="button" class="pilot-card pilot-card--first" data-pilot="1" aria-haspopup="dialog">
+            <span class="pilot-card__position">1</span><span class="pilot-card__portrait"><span>AS</span></span>
+            <span class="pilot-card__name">Andrés Salazar</span><span class="pilot-card__team">Equipo Demo Inca</span>
+            <span class="pilot-card__line"></span><span class="pilot-card__points">128 pts</span>
+          </button>
+          <button type="button" class="pilot-card pilot-card--third" data-pilot="3" aria-haspopup="dialog">
+            <span class="pilot-card__position">3</span><span class="pilot-card__portrait"><span>LG</span></span>
+            <span class="pilot-card__name">Luis Gamarra</span><span class="pilot-card__team">Equipo Andes Racing</span>
+            <span class="pilot-card__line"></span><span class="pilot-card__points">109 pts</span>
+          </button>
+          <div class="pilots-podium__base" aria-hidden="true"></div>
+        </div>
       </div>
     </section>
+    <dialog class="pilot-dialog" id="pilot-dialog" aria-labelledby="pilot-dialog-title">
+      <div class="pilot-dialog__layout">
+        <div class="pilot-dialog__visual">
+          <div class="pilot-dialog__avatar" id="pilot-dialog-avatar" aria-hidden="true">AS</div>
+          <small>Perfil de demostración</small>
+        </div>
+        <div class="pilot-dialog__details">
+          <button class="pilot-dialog__close" type="button" aria-label="Cerrar perfil">×</button>
+          <h2 id="pilot-dialog-title">Andrés Salazar</h2>
+          <p id="pilot-dialog-team" class="pilot-dialog__team">Equipo Demo Inca</p>
+          <div class="pilot-dialog__facts">
+            <div><small>Categoría</small><strong id="pilot-dialog-category">RC2</strong></div>
+            <div><small>Edad</small><strong id="pilot-dialog-age">32 años</strong></div>
+            <div><small>Ciudad</small><strong id="pilot-dialog-city">Arequipa</strong></div>
+          </div>
+          <p class="pilot-dialog__label">Biografía</p>
+          <p class="pilot-dialog__bio" id="pilot-dialog-bio">Información de ejemplo para visualizar el diseño del perfil.</p>
+          <p class="pilot-dialog__label">Estadísticas en la carrera</p>
+          <div class="pilot-dialog__stats">
+            <div><small>Puntos</small><strong id="pilot-dialog-points">128</strong></div>
+            <div><small>Victorias</small><strong id="pilot-dialog-wins">6</strong></div>
+            <div><small>Podios</small><strong id="pilot-dialog-podiums">8</strong></div>
+            <div><small>Etapas</small><strong id="pilot-dialog-stages">15</strong></div>
+          </div>
+          <button class="pilot-dialog__button" type="button" id="pilot-dialog-done">Cerrar perfil</button>
+        </div>
+      </div>
+    </dialog>
   </main>
   <div id="shared-footer"></div>
 </body>
