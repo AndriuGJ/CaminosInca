@@ -1,7 +1,7 @@
 
 <section
     id="hero"
-    class="relative isolate flex main-h-svh items-center overflow-hidden bg-carbon text-white"
+    class="relative isolate flex min-h-svh items-center overflow-hidden bg-carbon text-white"
 >
     <!-- Imagen de fondo para todos los dispositivos -->
     <picture class="absolute inset-0 -z-20">
