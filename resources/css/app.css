@@ -22,3 +22,13 @@ body {
     background-color: var(--color-marfil);
     color: var(--color-carbon);
 }
+
+/* Ocultar la barra de scroll sin desactivar el desplazamiento */
+
+html {
+    scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
