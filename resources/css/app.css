@@ -32,3 +32,71 @@ html {
 html::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Edge */
 }
+
+
+/* ========================================
+   PATROCINADORES
+======================================== */
+
+.sponsors-marquee {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sponsors-track {
+    display: flex;
+    width: max-content;
+    animation: sponsors-scroll 30s linear infinite;
+}
+
+.sponsors-group {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+.sponsor-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    padding: 0 24px;
+}
+
+@keyframes sponsors-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Detener animación al pasar el cursor */
+.sponsors-marquee:hover .sponsors-track {
+    animation-play-state: paused;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 640px) {
+    .sponsor-item {
+        width: 140px;
+        padding: 0 18px;
+    }
+
+    .sponsors-track {
+        animation-duration: 24s;
+    }
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    .sponsors-track {
+        animation: none;
+    }
+
+    .sponsors-marquee {
+        overflow-x: auto;
+    }
+}
