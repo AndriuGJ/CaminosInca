@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+@theme {
+    --color-carbon: #202124;
+    --color-marfil: #F7F5F0;
+    --color-arena: #C7B18C;
+
+    --font-display: "Anton", Impact, sans-serif;
+    --font-sans: "Poppins", sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-marfil);
+    color: var(--color-carbon);
+}
