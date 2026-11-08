@@ -115,3 +115,13 @@ html::-webkit-scrollbar {
         #C7B18C 14px
     );
 }
+
+@media (hover: hover) and (pointer: fine) {
+    body {
+        cursor: url('/assets/cursors/rally-car.png') 4 4, auto;
+    }
+
+    a, button, [role="button"] {
+        cursor: url('/assets/cursors/rally-flag.png') 4 4, pointer;
+    }
+}
