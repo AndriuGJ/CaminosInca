@@ -116,12 +116,61 @@ html::-webkit-scrollbar {
     );
 }
 
+
+
+/* ========================================
+   CURSORES - RALLY CAMINOS DEL INCA
+======================================== */
+
 @media (hover: hover) and (pointer: fine) {
-    body {
-        cursor: url('/assets/cursors/rally-car.png') 4 4, auto;
+
+    html,
+    body,
+    body * {
+        cursor: url('http://127.0.0.1:8001/assets/cursors/rally-car.png')8 8, auto !important;
     }
 
-    a, button, [role="button"] {
-        cursor: url('/assets/cursors/rally-flag.png') 4 4, pointer;
+    a,
+    a *,
+    button,
+    button *,
+    select,
+    [role="button"],
+    [role="button"] * {
+        cursor: url('http://127.0.0.1:8001/assets/cursors/rally-flag.png') 8 8, pointer !important;
+    }
+
+    input,
+    textarea,
+    [contenteditable="true"] {
+        cursor: text !important;
     }
 }
+
+
+/* ========================================
+   PILOTOS
+======================================== */
+
+/* Scroll suave entre secciones */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Evitar que Tailwind muestre elementos ocultos */
+.piloto-card[hidden],
+#pilotos-ver-mas[hidden] {
+    display: none !important;
+}
+
+/* Reducir efectos cuando el usuario lo solicite */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .piloto-card img {
+        transition: none;
+    }
+}
+

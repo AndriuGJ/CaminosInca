@@ -1,0 +1,102 @@
+orden,numero,piloto,copiloto,vehiculo,localidad,clase
+01,59,Jorge Martínez,José Aros,Hyundai I20 N,Lima,RC2
+02,40,Carlos Castro Yangali,Hernán Vargas,Ford Fiesta,Lima,RC3
+03,44,Eduardo Castro Yangali,Eduardo Castro Yangali,Ford Fiesta,Lima,RC3
+04,47,Andre Martínez,Matías Aranguren,Ford Fiesta Rally 3,Lima,RC3
+05,48,Jimver Aramayo,Iván Figueroa,Renault Clio,Madre de Dios,RC3
+06,49,Jenrry Quispe,Renzo Carpio,Renault Clio,Ayacucho,RC3
+07,52,Nelson Quispe,Erik Quispe,Renault Clio,Ayacucho,RC3
+08,57,Samuel Dyer Jr.,Julio Echazú,Ford Fiesta Rally 3,Lima,RC3
+09,58,Samuel M. Dyer,Javiera Roman,Ford Fiesta Rally 3,Lima,RC3
+10,39,Roberto Matos F.,Álvaro Rivera,Ford Fiesta,Amazonas,RC3
+11,67,Raúl Ccoyo,Álvaro Cornejo,Renault Clio,Cusco,RC4
+12,68,Rodrigo Ccoyo,Álvaro Chávez,Peugeot 208 R4,Cusco,RC4
+13,70,Sandro Dávila V.,César Ortiz,Peugeot 208 R4,Huancayo,RC4
+14,73,Humberto Gómez,Jimmy Gómez,Peugeot 208 R4,Huancayo,RC4
+15,66,José Frisancho,Francisco Tiravanti,Peugeot 208,Cusco,RC4
+16,80,Horacio Cánepa,Ricardo Figueroa,Renault Clio,Huánuco,RC4
+17,709,Edgar Loa Quispe,Guilles Yangali,Toyota Yaris N5,Cañete – Andahuaylas,TIN
+18,712,Luis Alayza,Gabriel Lozada,Toyota Gr Yaris,Lima,TIN
+19,714,William Loa Quispe,Erick Ocampo,Mitsubishi Lancer Evo 9,Cañete – Andahuaylas,TIN
+20,716,Raúl Orlandini,Pedro La Cruz,Mitsubishi Evo X,Lima,TIN
+21,719,Ricardo Dasso,Miguel Álvarez,Toyota Gr Yaris,Lima,TIN
+22,724,Ronmel Palomino,Guillermo Sierra,Skoda Fabia N5,Adahuaylas,TIN
+23,729,Wilfredo Aysa,Samael Bendezú,Skoda Fabia Aos,Abancay,TIN
+24,734,Richard Palomino,José Rojas,Skoda Fabia N5,Andahuaylas,TIN
+25,736,Alipio Aysa,Carlos Valdivia,Toyota Yaris N5,Abancay,TIN
+26,742,Nicolás Fuchs,Fernando Mussano,Toyota Gr Yaris,Lima,TIN
+27,750,Rolynd Juárez,Ronald Laurente,Toyota Yaris,Andahuaylas,TIN
+28,768,Manuel Yáñez,Brian Cáceres,Toyota Yaris N5,Arequipa,TIN
+29,769,Luis Mendoza Del Valle,Félix Olazábal,Toyota Gr Yaris,Lima,TIN
+30,784,Percy Ccoyo,Ángel Tapia,Toyota Gr Yaris,Cusco,TIN
+31,610,Roel Torres,Juan Chipa,Mitsubishi Evo Vii,Abancay,TIL
+32,612,Miguel Alayza,Jaime Zevallos,Subaru Forester,Cañete,TIL
+33,620,Ronald Llihua,Ricardo Paitán,Mitsubishi Evo Ix,Huancavelica,TIL
+34,627,Rosmel Chumpe,Reynaldo Chumpe,Mitsubishi,Curahuasi-Abancay,TIL
+35,657,Otto Quispeayala,Diego Aliaga,Subaru Impreza,Huancayo,TIL
+36,677,Roberto Párraga,Ronald Uribe,Mitsubishi Evo Viii,Huancayo,TIL
+37,678,Marko Garcés,Luis Carazas,Mitsubishi Evo V,Arequipa,TIL
+38,520,Jesús Jurado,Carlos Elías,Toyota Hilux,Ica,T1
+39,540,Diego Málaga,Oswaldo Carbone,Vw Amarok V6,Lima,T1
+40,545,Ashley García,Nicolás Montgomery,Jac T8 Pro,Lima,T1
+41,570,Álvaro Silva,Paolo Zani,Vw Amarok V6,Lima,T1
+42,577,José Carlos Vallejo,Miguel Makino,Vw Amarok V6,Lima,T1
+43,500,Jesús Vilca,Miguel Saavedra,Vw Amarok,Cusco,T1
+44,501,Antonio Falcone,José Grimaldi,Toyota Hilux,Chincha,T1
+45,93,Isaura Huallpartupa,Bernardino Huallpartupa,Suzuki Celerio,Cusco,PROM
+46,505,Diego Navea,Manuel Marengo,JMC,Lima,CAM
+47,511,Waldir Arias,Giordano Arias,JMC,Lima,CAM
+48,518,Mandela Rivera,Diego Velásquez,Nissan Fiera,Andahuaylas,CAM
+49,519,Karem Quispe,Mario Velásquez,JMC,Moquegua,CAM
+50,525,Fernando Alarcón,Renato Cuzzi,Mitsibishi L200,Arequipa,CAM
+51,539,Edgardo Arimborgo,Luis Alberto Pérez,Mahindra,Huanta,CAM
+52,549,Celestino Garrido,Percy Salcedo,Foton Tunland,Lima,CAM
+53,586,Jeff Gavancho,Nikoll Moscoso,Mitsubishi L200,Andahuaylas,CAM
+54,587,Fabiola Medina,Keiko Medina,JMC,Ayaviri,CAM
+55,01,Aníbal Aliaga,Javier Marchese,Can-Am Maverick R,Huancayo,UTV
+56,19,Bradley Salazar,Josecarlo Espinoza,Can-Am Maverick Rx,Ecuador,UTV
+57,20,Jimmy Chirinos,Juan Pablo Echegaray,Can-Am Maverick R,Ica,UTV
+58,28,Joel Manya,Joel Manya,Can-Am,Calca-Cusco,UTV
+59,404,Rubel Cáceres,Saúl Totos,Toyota Corolla,Ayacucho,ST
+60,413,Leonardo Cruz,Álex Cruz,Honda Civic,Juliaca,ST
+61,419,Julio Huacasi,Rodrigo Huacasi,Toyota Curren,Puno,ST
+62,431,Dante Febres,Andrés Ramos,Nissan Pulsar,Cusco,ST
+63,433,Briz Alvarado,Eric Sandhaus,Honda Civic,Lunahuana-Cañete,ST
+64,480,Junior Ellesca,Franklin Ellesca,Toyota Curren,Ayacucho,ST
+65,482,Joel Chacón,Kennedy Chacón,Honda Civic,Uripa – Chincheros,ST
+66,496,Álex García,Franklin Sullcaray,Citroen Ds3,Espinar-Cusco,ST
+67,318,Carlos Zegarra,Renzo Gutiérrez,Honda Civic,Arequipa,S2000
+68,340,Gerson Pastrana,Gezer Pastrana,Honda Civic,Lima,S2000
+69,341,Jimmy Marmanillo,Thomas Díaz,Toyota Corolla,Cusco,S2000
+70,354,Irving Paiva,Aron Galván,Honda Civic,Talavera,S2000
+71,355,Santiago Sandoval,Pedro Trujillo,Seat Leon,Lima,S2000
+72,365,Darwin Montoya,Rosmer Mamani,Bmw 3 Series,Cusco,S2000
+73,368,David Cahuana,Ayrton Ortega,Honda Civic,Moquegua,S2000
+74,375,Mario Carbajal,Frammerd Pillaca,Honda Civic,Uripa,S2000
+75,381,Jorge Rivera,Pablo Gutiérrez,Honda Civic,Abancay,S2000
+76,382,Williams Yangali,Edwin Paredes,Toyota Levin,Huancayo,S2000
+77,384,Carlos Alania,Brian Alania,Honda Civic,Huancayo,S2000
+78,386,Takeo Matayoshi,Diego Medina,Subaru Brz,Lima,S2000
+79,398,Santiago Aguayo,Ricardo Rivera,Toyota Gt86,Pisco,S2000
+80,105,Pablo Lizarzaburu,Jaime Galarza,Kia Rio Lx,Ecuador,S1600
+81,140,Grimaldo Lupo,Edwin Lupo,Toyota Levin,Pallpata-Cusco,S1600
+82,144,Yimi Paiva,Jorge Luis Urpi,Toyota Vitz,Andahuaylas,S1600
+83,158,Yerry Urday,Gustavo Cervantes,Honda Civic,Arequipa,S1600
+84,197,Augusto Yangali,Héctor Espinoza,Peugeot 206,Huancayo,S1600
+85,219,Erich Polack,Eduardo Bedoya,Toyota Corolla,Lima,S1600
+86,224,Víctor Del Pino,Angelo Posso,Toyota Auris,Lima,S1600
+87,225,Jhon Centeno,Frank Umeres,Toyota Levin,Ayacucho,S1600
+88,226,Pedro Nestares,Frank Nestares,Peugeot 206,Huancayo,S1600
+89,230,Mario Camac,Maicol Flores,Toyota,Huancayo,S1600
+90,231,Jhon Cerrón,Alexander Contreras,Renault Clio,Huancayo,S1600
+91,235,Luis Villasante,José Villasante,Toyota Corolla,Cusco,S1600
+92,238,Isaac Paliza,Lino Bernachea,Ford Escort,Pasco,S1600
+93,240,Edwin Lupo,Yessica Yucra,Toyota Corolla G6,Pallpata-Cusco,S1600
+94,244,Annia Cilloniz,Eugenio Arrieta,Toyota Corolla,Lima,S1600
+95,245,Luis Cornejo,Ricardo Cáceres,Toyota Levin,Arequipa,S1600
+96,247,Rolando Gutiérrez,Thais Gutiérrez,Toyota Corolla,Huanta,S1600
+97,255,Javier Alvarado,Jeysson Sulluchuco,Toyota Auris,Lunahuana-Cañete,S1600
+98,258,Alberth Mamani,Riquelme Mamani,Volkswagen Gol,Cusco,S1600
+99,259,Diego Valencia,Meyer Gómez,Hyundai Atos,Luricocha-Huanta,S1600
+100,266,Alonso Mejía,Daniel Mejía,Subaru Impreza,Lima,S1600
+101,281,Elmer Apaza,Justo Medina,Toyota Levin,Ayaviri-Puno,S1600

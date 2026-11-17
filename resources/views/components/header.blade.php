@@ -15,7 +15,7 @@
             href="{{ route('inicio') }}"
             class="relative z-50 font-display text-2xl uppercase tracking-wide"
         >
-            CAMINOS <span class="text-arena">DEL INCA</span>
+            <img src="{{ asset('assets/img/footer/logo-rally.webp') }}" alt="Logo de rally" width="120">
         </a>
 
         <!-- Navegación escritorio -->

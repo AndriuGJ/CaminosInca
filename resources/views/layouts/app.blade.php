@@ -13,11 +13,11 @@
 
     @stack('styles')
 </head>
-<body class="min-h-screen bg-marfil text-carbon antialiased">
+<body class="flex min-h-screen flex-col">
 
     @include('components.header')
 
-    <main id="contenido">
+    <main id="contenido" class="flex-1">
         @yield('content')
     </main>
 
